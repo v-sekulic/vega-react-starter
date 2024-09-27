@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import { sum } from 'foo';
+import 'ui-kit/src/styles/index.css';
 import './App.css';
 
 function App() {
