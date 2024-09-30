@@ -9,13 +9,14 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "transform": {
-      "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+      "^.+\\.tsx?$": "ts-jest"
     },
-    "transformIgnorePatterns": [
-      "node_modules/(?!variables/.*)"
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
     ]
   }
 }
