@@ -8,7 +8,7 @@ module.exports = {
     // relative path by consumer app
     './{src,pages,components}/**/*.{js,jsx,ts,tsx}',
     // path to ui-kit components (relative to current dir)
-    join(__dirname, '../components/**/*.{js,jsx,ts,tsx}'),
+    join(__dirname, '../ui/**/*.{js,jsx,ts,tsx}'),
   ],
   theme: {
     container: {

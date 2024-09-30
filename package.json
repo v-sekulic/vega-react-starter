@@ -11,10 +11,13 @@
     "build": "npm run build:package-a && npm run build:package-b",
     "build:package-a": "cd packages/package-a && npm run build",
     "build:package-b": "cd packages/package-b && npm run build",
-    "create:ts-lib": "node scripts/create-ts-lib.js"
+    "create:ts-lib": "node scripts/create-ts-lib.js",
+    "dev:web": "npm run dev --workspace=apps/web"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
+    "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "inquirer": "^11.0.2",
