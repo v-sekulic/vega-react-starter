@@ -7,12 +7,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "npm run build:package-a && npm run build:package-b",
     "build:package-a": "cd packages/package-a && npm run build",
     "build:package-b": "cd packages/package-b && npm run build",
     "create:ts-lib": "node scripts/create-ts-lib.js",
-    "dev:web": "npm run dev --workspace=apps/web"
+    "dev:web": "npm run dev --workspace=apps/web",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.1",
@@ -20,6 +23,8 @@
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "inquirer": "^11.0.2",
     "lucide-react": "^0.446.0",
     "react": "^18.3.1",
@@ -31,14 +36,17 @@
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.4",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.3.3",
     "tailwindcss": "^3.4.13",
     "ts-jest": "^29.2.5",
     "typescript": "^5.5.3",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "keywords": [],
   "author": "",

@@ -10,11 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "foo": "*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "foo": "*",
     "ui-kit": "*"
-
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

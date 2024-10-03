@@ -1,5 +1,2 @@
-export const sum = (a: number, b: number) => {
-  return a + b;
-};
-
+export * from './utils/cn';
 export * from './ui';
