@@ -7,15 +7,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "build": "npm run build:package-a && npm run build:package-b",
-    "build:package-a": "cd packages/package-a && npm run build",
-    "build:package-b": "cd packages/package-b && npm run build",
     "create:ts-lib": "node scripts/create-ts-lib.js",
+    "create:react-lib": "node scripts/create-react-lib.js",
     "dev:web": "npm run dev --workspace=apps/web",
     "build:web": "npm run build --workspace=apps/web",
     "preview:web": "npm run preview --workspace=apps/web",
+    "create:react-app": "node scripts/create-react-app.js",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

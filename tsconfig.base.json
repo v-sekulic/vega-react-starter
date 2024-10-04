@@ -1,21 +1,20 @@
 {
-    "compilerOptions": {
-      "target": "es2020", // Modern target for newer JavaScript features
-      "module": "esnext", // Keep ESNext for tree-shaking and dynamic imports
-      "moduleResolution": "node", // Standard for resolving modules in Node.js style
-      "jsx": "react", // For React support in .tsx files
-      "lib": ["es2020", "dom"], // For modern browsers and DOM support in React
-      "sourceMap": true, // Helpful for debugging in development environments
-      "declaration": true, // Generates .d.ts files for libraries
-      "declarationMap": true, // Generates source maps for declarations to debug types
-      "skipLibCheck": true, // Speeds up compilation by skipping type checks on libraries
-      "strict": true, // Enables strict type checking to ensure high code quality
-      "esModuleInterop": true, // Compatibility with CommonJS modules
-      "forceConsistentCasingInFileNames": true, // Ensures file imports have consistent casing
-      "isolatedModules": true, // Required for `tsc` when using Babel or similar tools
-      "resolveJsonModule": true, // Enables importing `.json` files
-      "noEmit": true // No need to emit output in apps; just check types
-    },
-    "exclude": ["node_modules", "tmp"] // Standard exclusions
-  }
-  
+  "compilerOptions": {
+    "target": "es2020", // Modern target for newer JavaScript features
+    "module": "esnext", // Keep ESNext for tree-shaking and dynamic imports
+    "moduleResolution": "node", // Standard for resolving modules in Node.js style
+    "jsx": "react-jsx", // For React support in .tsx files
+    "lib": ["es2020", "dom"], // For modern browsers and DOM support in React
+    "sourceMap": true, // Helpful for debugging in development environments
+    "declaration": true, // Generates .d.ts files for libraries
+    "declarationMap": true, // Generates source maps for declarations to debug types
+    "skipLibCheck": true, // Speeds up compilation by skipping type checks on libraries
+    "strict": true, // Enables strict type checking to ensure high code quality
+    "esModuleInterop": true, // Compatibility with CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensures file imports have consistent casing
+    "isolatedModules": true, // Required for `tsc` when using Babel or similar tools
+    "resolveJsonModule": true, // Enables importing `.json` files
+    "noEmit": true // No need to emit output in apps; just check types
+  },
+  "exclude": ["node_modules", "tmp"] // Standard exclusions
+}
