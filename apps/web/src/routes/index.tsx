@@ -11,7 +11,14 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
   Button,
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
 } from 'ui-kit';
+
+import { Copy, GithubIcon } from 'lucide-react';
+import { useState } from 'react';
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -72,14 +79,30 @@ function Index() {
           </span>
         </Title>
         <p
-          className="       bg-[#FBAB7E] text-lg bg-gradient-to-r from-[#FBAB7E] to-[#F7CE68]
+          className="bg-[#FBAB7E] text-lg bg-gradient-to-r from-[#FBAB7E] to-[#F7CE68]
     bg-clip-text 
     text-transparent  max-w-md text-center mx-auto mb-10"
         >
           Jumpstart your next enterprise project with our feature-packed,
           high-performance React boilerplate - Leo!
         </p>
-        <AlertDialogDemo />
+        <div className="flex gap-3 w-full h-14 max-w-80 mx-auto">
+          <CopyCommand />
+
+          <Button
+            variant={'outline'}
+            // size={'icon'}
+            className="aspect-square h-full"
+          >
+            <a
+              href="https://github.com/v-sekulic/vega-react-starter"
+              target="_blanc"
+            >
+              <GithubIcon />
+            </a>
+          </Button>
+          {/* <AlertDialogDemo /> */}
+        </div>
       </div>
     </div>
   );
@@ -89,7 +112,9 @@ export function AlertDialogDemo() {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant="outline">Get Started</Button>
+        <Button variant="outline" className="h-full">
+          Get Started
+        </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
@@ -107,3 +132,37 @@ export function AlertDialogDemo() {
     </AlertDialog>
   );
 }
+const CopyCommand = () => {
+  const [copied, setCopied] = useState(false);
+  const command = 'npx leo';
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(command);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+  };
+
+  return (
+    <TooltipProvider>
+      <div className="relative flex items-center bg-[#1e293b] rounded-lg px-4 py-2 flex-1 justify-between">
+        <code className="text-[#d4d4d8] font-mono text-lg">{command}</code>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              onClick={handleCopy}
+              variant="ghost"
+              size={'icon'}
+              className="ml-2 p-0 text-[#d4d4d8] hover:text-[#a3a3a3] transition-all"
+            >
+              <Copy size={20} />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            {copied ? 'Copied!' : 'Copy to clipboard'}
+          </TooltipContent>
+        </Tooltip>
+      </div>
+    </TooltipProvider>
+  );
+};
