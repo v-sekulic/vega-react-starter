@@ -86,7 +86,7 @@ function Index() {
           Jumpstart your next enterprise project with our feature-packed,
           high-performance React boilerplate - Leo!
         </p>
-        <div className="flex gap-3 w-full h-14 max-w-80 mx-auto">
+        <div className="flex gap-3 w-full h-14 max-w-96 mx-auto">
           <CopyCommand />
 
           <Button
