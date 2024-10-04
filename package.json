@@ -14,6 +14,8 @@
     "build:package-b": "cd packages/package-b && npm run build",
     "create:ts-lib": "node scripts/create-ts-lib.js",
     "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "preview:web": "npm run preview --workspace=apps/web",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -36,6 +38,8 @@
   "devDependencies": {
     "@babel/preset-env": "^7.25.7",
     "@babel/preset-react": "^7.25.7",
+    "@tanstack/router-devtools": "^1.58.18",
+    "@tanstack/router-plugin": "^1.58.12",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.13",
