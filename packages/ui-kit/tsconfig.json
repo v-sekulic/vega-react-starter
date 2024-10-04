@@ -8,10 +8,7 @@
     "noFallthroughCasesInSwitch": true,
     "module": "commonjs",
     "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "baseUrl": "."
   },
   "include": ["src", "tests"]
 }

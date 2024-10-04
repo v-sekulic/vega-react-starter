@@ -7,12 +7,13 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "lint": "eslint .",
+    "test": "jest",
     "preview": "vite preview"
   },
   "dependencies": {
-    "foo": "*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "ts-node": "^10.9.2",
     "ui-kit": "*"
   },
   "devDependencies": {
