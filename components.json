@@ -3,7 +3,7 @@
   "style": "default",
   "rsc": false,
   "tailwind": {
-    "config": "ui-kit/src/tailwind/base-tailwind-config.ts",
+    "config": "ui-kit/src/tailwind/base-tailwind-config.cjs",
     "css": "ui-kit/src/styles/globals.css",
     "baseColor": "stone",
     "cssVariables": true
