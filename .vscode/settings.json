@@ -14,5 +14,6 @@
     "javascript": "javascript",
     "css": "css",
     "tsx": "tsx"
-  }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
