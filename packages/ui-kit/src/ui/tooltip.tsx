@@ -23,7 +23,6 @@ const TooltipContent = React.forwardRef<
     {...props}
   />
 ));
-console.log('test deployment');
 TooltipContent.displayName = TooltipPrimitive.Content.displayName;
 
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };
