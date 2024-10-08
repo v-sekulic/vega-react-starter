@@ -22,7 +22,7 @@ Initiate the set up by running a single command, and follow the wizard 🧙:
 npx vega-leo-cli init
 ```
 
-### CLI
+## CLI
 
 Out of the box CLI gives you couple of useful scripts to allow for rapid development.
 
