@@ -50,7 +50,7 @@ npx vega-leo-cli create:react-app [name]
 npx vega-leo-cli component [name]
 ```
 
-### UI Package
+## UI Package
 
 All styles for our shared design system are found in `packages/ui-kit/src/styles/index.css`.
 These include styles for the following:
@@ -77,7 +77,7 @@ createRoot(document.getElementById('root')!).render(
 
 In the initial react app that comes with the starter, this will all be set up automatically.
 
-#### Shadcn UI
+### Shadcn UI
 
 We are using pre-build components from Shadcn UI. This is not a component library that you need to install, but a library of components that you can copy/paste into your project. Doing this we have complete ownership of components, so we are free to change them however we like.
 Ofcourse you are not limited to Shad components, so feel free to add custom ones.
