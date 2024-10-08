@@ -11,9 +11,9 @@
   "scripts": {
     "create:ts-lib": "node scripts/create-ts-lib.js",
     "create:react-lib": "node scripts/create-react-lib.js",
-    "dev:web": "pnpm --filter web dev",
-    "build:web": "pnpm --filter web build",
-    "preview:web": "pnpm --filter web preview",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "preview:web": "npm run preview --workspace=apps/web",
     "create:react-app": "node scripts/create-react-app.js",
     "lint": "eslint .",
     "format": "prettier --write ."
