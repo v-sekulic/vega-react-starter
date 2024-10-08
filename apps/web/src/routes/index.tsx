@@ -134,7 +134,7 @@ export function AlertDialogDemo() {
 }
 const CopyCommand = () => {
   const [copied, setCopied] = useState(false);
-  const command = 'npx vega-leo-cli';
+  const command = 'npx vega-leo-cli init';
 
   const handleCopy = () => {
     navigator.clipboard.writeText(command);
