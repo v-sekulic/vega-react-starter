@@ -90,9 +90,7 @@ npx shadcn@latest add [component]
 
 Newly created components will be added to `packages/ui-kit/src/ui`. Don't forget to export them through the barrel file.
 
-To find available components check out the [documentation](documentation)
-
-
+To find available components check out the [documentation](https://ui.shadcn.com/docs/components/accordion)
 # TODOS:
 - lib for strict type check of env variables
 - cli support for preset pages (like auth, dashboard etc.)
